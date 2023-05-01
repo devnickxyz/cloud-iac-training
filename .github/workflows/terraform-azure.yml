@@ -27,7 +27,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "./azure"
+        working-directory: "./azure/dev"
         
     steps:
       - name: "checkout git repository"
