@@ -57,3 +57,12 @@ resource "aws_dynamodb_table" "terraform_locks" {
     type = "S"
   }
 }
+
+# resource "aws_instance" "my_terra_ec2" {
+#   ami           = "ami-0a606d8395a538502"
+#   instance_type = "t2.micro"
+
+#   tags = {
+#     Name = "ExampleAppServerInstance"
+#   }
+# }
