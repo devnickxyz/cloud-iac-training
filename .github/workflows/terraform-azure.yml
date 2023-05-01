@@ -5,8 +5,8 @@ on:
     branches:
       - main
       - cloud-iac-training
-    paths:
-      - azure/dev/*
+    # paths:
+    #   - azure/dev/*
   pull_request:
     branches:
       - main
