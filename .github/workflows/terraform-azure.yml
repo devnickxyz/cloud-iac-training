@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - cloud-iac-training
+      - feature/init-terraform
     # paths:
     #   - azure/dev/*
   pull_request:
