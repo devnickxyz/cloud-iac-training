@@ -13,6 +13,12 @@ on:
     paths:
     - azure/dev/*
 
+permissions:
+  id-token: write
+  contents: read
+  issues: write
+  pull-requests: write
+
 env:
   TF_LOG: INFO
   ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
