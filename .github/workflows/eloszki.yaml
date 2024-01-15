@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: test-env
     steps:
-      - run: echo ${{ envs.ELOSZKI }}
+      - run: echo ${{ env.ELOSZKI }}
 
   no-env-check:
     name: Check variabls from env 2
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ envs.ELOSZKI }}
+      - run: echo ${{ env.ELOSZKI }}
     
