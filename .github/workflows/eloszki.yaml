@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     environment: test-env
     steps:
-      - run: echo ${{ env.NEW_ENV }}
+      - run: echo "ENVIR $NEW_ENV"
 
   no-env-check:
-    name: Check variabls from env 2
+    name: Check variabls from repo
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ env.NEW_ENV }}
+      - run: echo "REPO $NEW_ENV"
     
