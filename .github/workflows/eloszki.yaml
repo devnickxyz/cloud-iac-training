@@ -1,0 +1,22 @@
+name: Test variables
+on:
+  push:
+    branches:
+      - main
+env:
+  NEW_ENV: {{ vars.ELOSZKI }}
+
+jobs:
+  Check-variable-from-env:
+    name: Check variabls from env
+    runs-on: ubuntu-latest
+    environment: test-env
+    steps:
+      - run: echo ${{ envs.ELOSZKI }}
+
+  NO-ENV
+    name: Check variabls from env
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ envs.ELOSZKI }}
+    
