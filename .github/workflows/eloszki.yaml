@@ -4,7 +4,7 @@ on:
     branches:
       - main
 env:
-  NEW_ENV: ${{ vars.ELOSZKI }}
+  NEW_ENV: ${{ vars.ELOSZKI_VAR }}
 
 jobs:
   Check-variable-from-env:
