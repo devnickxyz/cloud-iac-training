@@ -1,6 +1,6 @@
 name: Test of gh api and gh cli
 on: 
-  workflow_disptach:
+  workflow_dispatch:
 
 job:
   test:
@@ -22,5 +22,3 @@ job:
           -H "Accept: application/vnd.github+json" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
           /repos/devnickxyz/cloud-iac-training/environments
-          
-    
