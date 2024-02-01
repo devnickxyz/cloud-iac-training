@@ -1,11 +1,11 @@
-name: Test of gh api and gh cli
+name: 'TEST'
 on: 
   workflow_dispatch:
 
-job:
-  test:
+jobs:
+  test-run:
     name: test
-    run_on: ubuntu-latest
+    runs_on: ubuntu-latest
 
     steps:
       - name: gh api
