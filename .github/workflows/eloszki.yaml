@@ -1,8 +1,6 @@
 name: 'Test variables'
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 env:
   NEW_ENV: ${{ vars.ELOSZKI_VAR }}
 
